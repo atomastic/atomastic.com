@@ -1,10 +1,5 @@
 ---
-title: Home
-fieldset: page
-template: default
-menu_item_title: Home
-menu_item_url: home
-menu_item_target: _self
-menu_item_order: 1
+title: Strings
+template: component
+description: Strings Component provide a fluent, object-oriented interface for working with string values, allowing you to chain multiple string operations together using a more readable syntax compared to traditional PHP strings functions.
 ---
-<h1 style="text-align: center;">Welcome!</h1><p style="text-align: center;" class="lead">Welcome to your new Flextype powered website.<br>Flextype is succesfully installed, you can start editing the content and customising your site in <a href="./admin">Admin panel</a>.</p>
