@@ -18,6 +18,8 @@
 
             <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
             {% do flextype.registry.set('assets.site.css.ness', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
 
@@ -31,11 +33,11 @@
         {% endblock %}
     </head>
     <body>
-        <nav class="bg-black text-white">
+        <nav class="bg-white text-black">
             <div class="container mx-auto pl-16 pr-16 pt-6 pb-6 clearfix">
                 <div class="w-full lg:w-2/12
                           text-center lg:text-left
-                          float-left text-white py-2 uppercase tracking-wide">
+                          float-left text-black py-2 uppercase tracking-wide">
                     <a href="{{ url() }}" class="w-full lg:w-2/12 text-center text-base no-underline">{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</a>
                 </div>
                 <div class="w-full float-right lg:w-9/12 font-noirpro-semibold">
@@ -47,16 +49,15 @@
                                     class="uppercase
                                   relative
                                   block
-                                  text-white
+                                  text-black
                                   text-center
                                   no-underline
                                   mr-0
-                                  border-black
+                                  {% if item.menu_item_url in entry.id %}border-black{% else %}border-white{% endif %}
                                   border-b-2
-                                  hover:border-white
+                                  hover:border-black
                                   lg:inline-block
-                                  {% if loop.last %}lg:mr-0{% else %}lg:mr-4{% endif %}
-                                  {% if item.menu_item_url in entry.id %}border-white{% endif %}">
+                                  {% if loop.last %}lg:mr-0{% else %}lg:mr-4{% endif %}">
                                     {{ item.menu_item_title }}
                                 </a>
                             {% endif %}
@@ -67,7 +68,7 @@
         </nav>
 
         <main class="container mx-auto">
-            <section id="content" class="p-16">
+            <section id="content" class="px-16">
                 {% block content %}{% endblock %}
             </section>
             <footer class="text-center pl-16 pr-16 pt-6 pb-16">
