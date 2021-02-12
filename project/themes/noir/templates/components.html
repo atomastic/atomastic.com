@@ -1,0 +1,20 @@
+{% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
+
+{% block content %}
+    <div class="uppercase text-center pt-20 pb-20 m-0">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
+        </div>
+    </div>
+    {% set components = flextype.entries.fetch('components', {'collection': true}) %}
+    <div class="flex flex-wrap">
+        {% for component in components %}
+        <a href="{{ url() }}/{{ component.id }}" class="p-4 w-4/12 cursor-pointer no-underline">
+            <h4 class="mb-2">{{ component.title }}</h4>
+            <div>
+                {{ component.description }}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock %}
