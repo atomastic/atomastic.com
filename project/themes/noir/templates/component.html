@@ -1,0 +1,13 @@
+{% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
+
+{% block content %}
+    <div class="uppercase text-center pt-20 pb-20 m-0">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
+        </div>
+        <div>
+            <span class="opacity-50"><a class="no-underline" href="{{ url() }}/components">COMPONENTS</a></span>
+        </div>
+    </div>
+    {{ entry.content|shortcode|markdown|raw }}
+{% endblock %}
