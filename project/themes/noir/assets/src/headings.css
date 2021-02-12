@@ -15,9 +15,9 @@ h3 {
 }
 
 h4 {
-  @apply text-xl;
+  @apply mb-4 text-xl;
 }
 
 h5 {
-  @apply text-lg;
+  @apply mb-3 text-lg;
 }
