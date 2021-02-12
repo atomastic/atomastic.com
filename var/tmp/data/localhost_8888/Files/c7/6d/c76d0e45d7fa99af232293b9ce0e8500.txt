@@ -1,0 +1,1 @@
+a:6:{s:1:"k";s:32:"985f88a1b4306989a78ced2d0c458086";s:1:"d";a:2:{s:4:"icon";s:4:"Icon";s:16:"icon_description";s:59:"Icon plugin to present Font Awesome icons set for Flextype.";}s:1:"g";a:0:{}s:1:"e";O:8:"DateTime":3:{s:4:"date";s:26:"2021-02-12 16:10:20.681376";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"UTC";}s:1:"m";N;s:1:"c";N;}
