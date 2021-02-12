@@ -1,13 +1,45 @@
 {% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
 
 {% block content %}
-    <div class="uppercase text-center pt-20 pb-20 m-0">
+
+    {% set uri1 = request.getUri().getPath()|split('/').1 %}
+    {% set uri2 = request.getUri().getPath()|split('/').2 %}
+    {% set uri3 = request.getUri().getPath()|split('/').3 %}
+
+    {% set gettingStarted = flextype.entries.fetch('components/' ~ uri1 ~ '/getting-started', {'collection': true}).sortByAsc('title') %}
+    {% set methods = flextype.entries.fetch('components/' ~ uri1 ~ '/methods', {'collection': true}).sortByAsc('title') %}
+
+    <div class="text-center pt-20 pb-20 m-0">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0 {% if uri2 != 'methods' %}uppercase{% endif %}"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
         </div>
         <div>
             <span class="opacity-50"><a class="no-underline" href="{{ url() }}/components">COMPONENTS</a></span>
+            {% if uri2 %}
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}">{{ flextype.entries.fetch('components/' ~ uri1).title }}</a></span>
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}/{{ uri2 }}">METHODS</a></span>
+            {% endif %}
         </div>
     </div>
-    {{ entry.content|shortcode|markdown|raw }}
+    <div class="flex flex-wrap">
+        <div class="p-4 w-9/12">
+            {{ entry.content|shortcode|markdown|raw }}
+        </div>
+        <div class="p-4 w-3/12">
+            <h4 class="mb-2">Getting Started</h4>
+            <ul>
+                {% for item in gettingStarted %}
+                <li><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            <h4 class="mt-4 mb-2">Methods</h4>
+            <ul>
+                {% for item in methods %}
+                <li><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endblock %}
