@@ -80,6 +80,9 @@
             </footer>
         </main>
 
+        {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
+        <script src="{{ highlight_js }}"></script>
+
         {% if flextype.registry.has('assets.site.js') %}
             {% for js in flextype.registry.get('assets.site.js') %}
                 {% if js %}
