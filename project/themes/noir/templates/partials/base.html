@@ -21,6 +21,7 @@
             <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
+            {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
             {% do flextype.registry.set('assets.site.css.ness', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
 
             {% if flextype.registry.has('assets.site.css') %}
@@ -82,6 +83,13 @@
 
         {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
         <script src="{{ highlight_js }}"></script>
+
+        <script>
+            hljs.configure({useBR: false});
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        </script>
 
         {% if flextype.registry.has('assets.site.js') %}
             {% for js in flextype.registry.get('assets.site.js') %}
