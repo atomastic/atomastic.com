@@ -6,22 +6,10 @@ description: Macroable Component is a trait that, gives you the ability in effec
 
 ### Installation
 
-#### With [Composer](https://getcomposer.org)
-
-```
-composer require atomastic/macroable
-```
+[entries_fetch id="components/macroable/getting-started/installation" field="content"]
 
 ### Usage
 
-```php
-use Atomastic\Macroable\Macroable;
-```
+[entries_fetch id="components/macroable/getting-started/usage" field="content"]
 
 ### Methods
-
-| Method | Description |
-|---|---|
-| <a href="#macroable_macro">`macro()`</a> | Register a custom macro. |
-| <a href="#macroable_mixin">`mixin()`</a> | Mix another object into the class. |
-| <a href="#macroable_hasMacro">`hasMacro()`</a> | Checks if macro is registered. |

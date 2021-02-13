@@ -1,0 +1,4 @@
+---
+title: Methods
+template: component
+---
