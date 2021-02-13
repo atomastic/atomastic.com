@@ -40,7 +40,6 @@ code {
     list-style: none;
     margin-left: 0;
 
-
     box-shadow: 3px 3px 0 #090e24;
     border: 1px solid #090e24;
     margin-bottom: 40px;
@@ -167,17 +166,10 @@ code {
     outline: none;
 }
 
-.table {
-
-    overflow: hidden;
-    border: 1px solid #090e24;
-    box-shadow: 3px 3px 0 #090e24;
-    margin-bottom: 40px;
+.search {
     width: 100%;
-}
-
-.table table thead {
-    background: #f8f9fb;
+    padding: 6px 10px;
+    border: 1px solid #090e24;
 }
 
 /* purgecss end ignore */

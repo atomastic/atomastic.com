@@ -6,3 +6,35 @@ body {
 a {
     @apply underline;
 }
+
+table tr {
+    border-bottom: 1px solid #090e24;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th, td {
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    vertical-align: middle;
+    border-color: #090e24;
+}
+
+
+.table {
+    overflow: hidden;
+    border: 1px solid #090e24;
+    box-shadow: 3px 3px 0 #090e24;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.table table thead {
+    background: #f8f9fb;
+}
