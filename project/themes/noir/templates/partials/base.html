@@ -35,13 +35,16 @@
     </head>
     <body>
         <nav class="bg-white text-black">
-            <div class="container mx-auto pl-16 pr-16 pt-6 pb-6 clearfix">
-                <div class="w-full lg:w-2/12
+            <div class="container mx-auto pl-16 pr-16 pt-6 pb-6 clearfix flex flex-wrap">
+                <div class="
                           text-center lg:text-left
-                          float-left text-black py-2 uppercase tracking-wide">
+                          flex-1 text-black py-2 uppercase tracking-wide">
                     <a href="{{ url() }}" class="w-full lg:w-2/12 text-center text-base no-underline">{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</a>
                 </div>
-                <div class="w-full float-right lg:w-9/12 font-noirpro-semibold">
+                <div class="flex-1">
+                    <input type="text" id="search" class="search" placeholder="Search...">
+                </div>
+                <div class="flex-1 font-noirpro-semibold">
                     <div class="text-right p-2">
                         {% for item in flextype.entries.fetch('', {'collection': true}).sortBy('menu_item_order', 'ASC').all() %}
                             {% if item.menu_item_title %}
