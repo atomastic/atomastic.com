@@ -26,8 +26,28 @@
     <div class="flex flex-wrap">
         <div class="p-4 w-9/12">
             {{ entry.content|shortcode|markdown|raw }}
+            {% if not uri2 %}
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        {% for item in methods %}
+                            <tbody>
+                                <tr>
+                                    <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
+                                    <td>{{ item.description }}</td>
+                                </tr>
+                            </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            {% endif %}
         </div>
-        <div class="p-4 w-3/12">
+        <div class="pt-4 pb-4 pl-10 w-3/12">
             <h4 class="mb-2">Getting Started</h4>
             <ul>
                 {% for item in gettingStarted %}
@@ -37,7 +57,12 @@
             <h4 class="mt-4 mb-2">Methods</h4>
             <ul>
                 {% for item in methods %}
-                <li><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
+                <li>
+                    <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
+                    <small class="mb-2 opacity-75 block">
+                        {{ item.description }}
+                    </small>
+                </li>
                 {% endfor %}
             </ul>
         </div>
