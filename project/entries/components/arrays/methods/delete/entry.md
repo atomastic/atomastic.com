@@ -15,7 +15,7 @@ description: Deletes an array value using "dot notation".
 public function delete($keys): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

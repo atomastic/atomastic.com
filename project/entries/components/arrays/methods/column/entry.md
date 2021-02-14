@@ -23,7 +23,7 @@ description: Get the values of a single column from an arrays items.
 public function column(?string $columnKey = null, ?string $indexKey = null): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays1 = Arrays::create([['id' => 'i1', 'val' => 'v1'], ['id' => 'i2', 'val' => 'v2']])

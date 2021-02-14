@@ -16,7 +16,7 @@ description: Pad the current array to the specified size with a given value.
 public function pad(int $size, $value): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([12, 10, 9])->pad(5, 0);

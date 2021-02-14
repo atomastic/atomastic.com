@@ -15,7 +15,7 @@ description: Create an array using the current array as keys and the other array
 public function combine(array $array): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['green', 'red', 'yellow'])->combine(['avacado', 'apple', 'banana'])->toArray();

@@ -14,7 +14,7 @@ description: Apply the given $callback function to the every element of the curr
 public function map(callable $callback): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([1, 2, 3, 4, 5])

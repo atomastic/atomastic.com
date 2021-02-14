@@ -15,7 +15,7 @@ description: Verifies that all elements pass the test of the given callback.
 public function every(Closure $callback): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays1 = Arrays::create([0 => 'Foo', 1 => 'Bar'])->every(function($value, $key) {

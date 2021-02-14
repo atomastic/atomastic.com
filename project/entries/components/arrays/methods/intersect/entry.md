@@ -13,7 +13,7 @@ description: Compute the current array values which present in the given one.
 public function intersect(array $array): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(["a" => "green", "red", "blue"])

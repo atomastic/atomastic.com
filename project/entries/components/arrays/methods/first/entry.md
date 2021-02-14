@@ -13,7 +13,7 @@ description: Get the first value from the current array.
 public function first()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

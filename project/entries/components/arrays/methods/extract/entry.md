@@ -16,7 +16,7 @@ description: Extract the items from the current array using "dot" notation for f
 public function extract($key, $default = null): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $result = Arrays::create(['items' => ['catalog' => ['nums' => [10, 20, 30]]]])

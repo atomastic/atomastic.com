@@ -18,7 +18,7 @@ description: Create a new arrayable object from the given elements.
 public static function create($items = []): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

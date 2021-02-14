@@ -11,7 +11,7 @@ description: Moves the internal iterator position to the next element and return
 public function next()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red'])->next()

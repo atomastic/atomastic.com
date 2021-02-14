@@ -15,7 +15,7 @@ description: Dumps the arrays items using the given function (print_r by default
 public function dd(?callable $callback = null): void
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

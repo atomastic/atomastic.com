@@ -13,7 +13,7 @@ description: Get all items from stored array.
 public function all(): array
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

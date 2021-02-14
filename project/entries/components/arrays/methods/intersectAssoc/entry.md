@@ -13,7 +13,7 @@ description: Compute the current array values with additional index check.
 public function intersectAssoc(array $array): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(["a" => "green", "b" => "brown", "c" => "blue", "red"])

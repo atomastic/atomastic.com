@@ -18,7 +18,7 @@ description: Create a new arrayable object from the given string.
 public static function createWithRange($low, $high, int $step = 1): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::createWithRange(1, 5);

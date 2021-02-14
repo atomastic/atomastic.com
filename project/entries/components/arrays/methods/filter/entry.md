@@ -20,7 +20,7 @@ description: Filter the current array for elements satisfying the predicate $cal
 public function filter(callable $callback, int $flag = ARRAY_FILTER_USE_BOTH): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([6, 7, 8, 9, 10, 11, 12])->filter(function($var) {

@@ -13,7 +13,7 @@ description: Groups the array items by a given key.
 public function groupBy(string $key): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $result = Arrays::create([

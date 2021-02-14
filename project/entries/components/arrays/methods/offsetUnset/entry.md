@@ -13,7 +13,7 @@ description: Unset an offset.
 public function offsetUnset($offset): void
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['items' => ['foo' => 'Foo', 'bar' => 'Bar']]);

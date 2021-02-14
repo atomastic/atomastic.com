@@ -11,7 +11,7 @@ description: Determines if an array is associative.
 public function isAssoc(): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

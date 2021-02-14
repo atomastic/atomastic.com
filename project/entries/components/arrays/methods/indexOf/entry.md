@@ -14,7 +14,7 @@ description: Alias of search() method. Search for a given item and return the in
 public function indexOf($needle)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $result = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red'])->indexOf('green');

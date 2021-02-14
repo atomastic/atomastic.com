@@ -14,7 +14,7 @@ description: Divide an array into two arrays.
 public function divide(): array
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

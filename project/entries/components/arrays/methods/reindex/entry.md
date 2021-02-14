@@ -11,7 +11,7 @@ description: Create a numerically re-indexed array based on the current array.
 public function reindex(): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([10 => 'foo', 111 => 'bar'])->reindex()->toArray();

@@ -18,7 +18,7 @@ description: Create a new arrayable object from the given JSON string.
 public static function createFromJson(string $input, bool $assoc = true, int $depth = 512, int $flags = 0): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::createFromJson('{"foo": "bar"}');

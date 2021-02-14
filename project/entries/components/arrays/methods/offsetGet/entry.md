@@ -13,7 +13,7 @@ description: Offset to retrieve.
 public function offsetGet($offset)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['items' => ['foo' => 'Foo', 'bar' => 'Bar']]);

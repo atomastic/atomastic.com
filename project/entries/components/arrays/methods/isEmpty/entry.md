@@ -11,7 +11,7 @@ description: Check whether the array is empty or not.
 public function isEmpty(): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red']);

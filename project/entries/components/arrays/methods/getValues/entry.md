@@ -13,7 +13,7 @@ description: Return an array of all values stored array.
 public function getValues(): array
 ```
 
-##### Example
+#### Examples
 
 ```php
 $result = Arrays::create([1, 2, 3, 4, 5])->getValues();

@@ -15,7 +15,7 @@ description: Return the number of items in a given key.
 public function count($key = null): int
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

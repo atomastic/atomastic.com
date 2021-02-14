@@ -17,7 +17,7 @@ description: Create a chunked version of current array.
 public function chunk(int $size, bool $preserveKeys = false): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['a', 'b'])->chunk(2)->toArray();

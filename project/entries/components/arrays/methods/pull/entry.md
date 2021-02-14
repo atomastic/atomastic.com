@@ -14,7 +14,7 @@ description: Get a value from the array, and remove it.
 public function pull($key, $default = null)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

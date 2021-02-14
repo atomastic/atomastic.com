@@ -15,7 +15,7 @@ description: Return slice of an array with just a given keys.
 public function except(array $keys): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5])

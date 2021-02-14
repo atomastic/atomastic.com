@@ -13,7 +13,7 @@ description: Exchanges all keys of current array with their associated values.
 public function flip(): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['oranges', 'apples', 'pears'])->flip()->toArray();

@@ -11,7 +11,7 @@ description: Create a new iterator from an ArrayObject instance.
 public function getIterator(): ArrayIterator
 ```
 
-##### Example
+#### Examples
 
 ```php
 $iterator = Arrays::create()->getIterator();

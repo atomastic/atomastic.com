@@ -13,7 +13,7 @@ description: Whether an offset exists.
 public function offsetExists($offset): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['items' => ['foo' => 'Foo', 'bar' => 'Bar']]);

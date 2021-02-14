@@ -14,7 +14,7 @@ description: Extract a slice of the current array with offset 0 and specific len
 public function limit(?int $length = null, bool $preserveKeys = false): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['a', 'b', 'c', 'd', 'e'])->limit(3);

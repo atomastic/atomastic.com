@@ -14,7 +14,7 @@ description: Assign a value to the specified offset.
 public function offsetSet($offset, $value)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create();

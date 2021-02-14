@@ -13,7 +13,7 @@ description: Flush all values from the array.
 public function flush(): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

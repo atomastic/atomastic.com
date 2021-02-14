@@ -15,7 +15,7 @@ description: Compute the current array values which not present in the given one
 public function diff(array $array): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['foo', 'bar'])->diff(['foo', 'bar'])->toArray();

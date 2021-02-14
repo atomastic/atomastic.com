@@ -11,7 +11,7 @@ description: Get the last value from the current array.
 public function last()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

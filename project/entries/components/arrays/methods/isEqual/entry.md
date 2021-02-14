@@ -13,7 +13,7 @@ description: Check if the current array is equal to the given $array or not.
 public function isEqual(array $array): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

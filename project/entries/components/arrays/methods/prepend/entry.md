@@ -15,7 +15,7 @@ description: Push an item into the beginning of an array.
 function prepend($value = null): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

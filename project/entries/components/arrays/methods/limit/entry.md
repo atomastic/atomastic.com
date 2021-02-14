@@ -11,7 +11,7 @@ description: Get the last key from the current array.
 public function lastKey()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

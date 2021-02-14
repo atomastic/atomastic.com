@@ -15,7 +15,7 @@ description: Passes the array to the given callback and return the result.
 public function pipe(Closure $callback)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = new Arrays([1, 2, 3]);

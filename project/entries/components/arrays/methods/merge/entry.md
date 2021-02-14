@@ -14,7 +14,7 @@ description: Merge the current array with the provided one.
 public function merge(array $array, bool $recursively = false): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['color' => 'red', 2, 4])

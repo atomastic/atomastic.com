@@ -14,7 +14,7 @@ description: Extract a slice of the current array with specific offset.
 public function offset(int $offset, bool $preserveKeys = false): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['a', 'b', 'c', 'd', 'e'])->offset(3);

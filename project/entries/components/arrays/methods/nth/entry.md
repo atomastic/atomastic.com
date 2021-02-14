@@ -14,7 +14,7 @@ description: Extract array items with every nth item from the array.
 public function nth(int $step, int $offset = 0): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([1, 2, 3, 4, 5])->nth(2);

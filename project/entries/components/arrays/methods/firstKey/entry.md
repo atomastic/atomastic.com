@@ -13,7 +13,7 @@ description: Get the first key from the current array.
 public function firstKey()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

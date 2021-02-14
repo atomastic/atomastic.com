@@ -16,7 +16,7 @@ description: Create a new arrayable object from the given string.
 public static function createFromString(string $string, string $separator): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::createFromString('foo,bar', ',');

@@ -13,7 +13,7 @@ description: Calculate the product of values in the current array.
 public function product()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $result = Arrays::create([2, 2, 2])->product();

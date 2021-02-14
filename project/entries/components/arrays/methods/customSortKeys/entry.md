@@ -13,7 +13,7 @@ description: Sorts the array keys with a user-defined comparison function and ma
 public function customSortKeys(callable $callback): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['b', 'a', 'c'])

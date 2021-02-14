@@ -15,7 +15,7 @@ description: Checks if the given dot-notated key exists in the array.
 public function has($keys): bool
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

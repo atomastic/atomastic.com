@@ -15,7 +15,7 @@ description: Flatten a multi-dimensional associative array with dots.
 public function dot(string $prepend = ''): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

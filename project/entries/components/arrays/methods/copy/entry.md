@@ -14,7 +14,7 @@ description: Creates a new Arrays object with the same items.
 public function copy(): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $foo = Arrays::create(['foo', 'bar']);

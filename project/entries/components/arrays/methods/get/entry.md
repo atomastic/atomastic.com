@@ -16,7 +16,7 @@ description: Get an item from an array using "dot" notation.
 public function get($key, $default = null)
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([

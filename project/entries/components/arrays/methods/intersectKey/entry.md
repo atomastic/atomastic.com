@@ -13,7 +13,7 @@ description: Compute the current array using keys for comparison which present i
 public function intersectKey(array $array): self
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create(['blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4])

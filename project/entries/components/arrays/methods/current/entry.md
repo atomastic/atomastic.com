@@ -17,7 +17,7 @@ description: Gets the element of the array at the current internal iterator posi
 public function current()
 ```
 
-##### Example
+#### Examples
 
 ```php
 $arrays = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red'])->current();
