@@ -51,15 +51,15 @@
             <h4 class="mb-2">Getting Started</h4>
             <ul>
                 {% for item in gettingStarted %}
-                <li><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
+                <li class="mb-2"><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
                 {% endfor %}
             </ul>
             <h4 class="mt-4 mb-2">Methods</h4>
             <ul>
                 {% for item in methods %}
-                <li>
+                <li class="mb-2">
                     <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
-                    <small class="mb-2 opacity-75 block">
+                    <small class="opacity-75 block">
                         {{ item.description }}
                     </small>
                 </li>
