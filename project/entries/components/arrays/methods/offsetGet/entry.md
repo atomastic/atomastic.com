@@ -1,0 +1,30 @@
+---
+title: offsetGet
+template: component
+description: Offset to retrieve.
+---
+
+```php
+/**
+ * Offset to retrieve.
+ *
+ * @param mixed $offset The offset to retrieve.
+ */
+public function offsetGet($offset)
+```
+
+##### Example
+
+```php
+$arrays = Arrays::create(['items' => ['foo' => 'Foo', 'bar' => 'Bar']]);
+
+print_r($arrays->offsetGet('items.foo'));
+print_r($arrays['items.bar']);
+```
+
+##### The above example will output:
+
+```text
+Foo
+Bar
+```
