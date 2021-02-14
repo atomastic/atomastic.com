@@ -22,7 +22,7 @@ print_r($arrays->offsetGet('items.foo'));
 print_r($arrays['items.bar']);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Foo

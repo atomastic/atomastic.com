@@ -38,7 +38,7 @@ $arrays = Arrays::create([
 $arrays->dump();
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

@@ -23,7 +23,7 @@ $arrays = Arrays::create(['a' => 'blue', 'b' => 'red', 'c' => 'green'])->sortKey
 print_r($arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

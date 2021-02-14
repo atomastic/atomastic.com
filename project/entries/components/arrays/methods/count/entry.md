@@ -40,7 +40,7 @@ $total = $arrays->count();
 print_r($total);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```
 1

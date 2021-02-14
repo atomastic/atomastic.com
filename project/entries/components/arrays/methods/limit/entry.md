@@ -34,7 +34,7 @@ $result = $arrays->lastKey();
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 bad_times_at_the_el_royale

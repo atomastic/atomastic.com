@@ -26,7 +26,7 @@ $arrays = Arrays::create([1, 2, 3, 4, 5])->nth(2, 1);
 print_r($arrays->toArray());
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

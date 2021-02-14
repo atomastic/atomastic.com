@@ -22,7 +22,7 @@ $result = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red'])->i
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 2

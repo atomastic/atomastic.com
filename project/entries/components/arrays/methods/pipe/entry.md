@@ -27,7 +27,7 @@ $arrays->pipe(static function ($arrays) {
 print_r(arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 3

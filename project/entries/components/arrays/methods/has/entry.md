@@ -45,7 +45,7 @@ if ($arrays->has('movies.the-thin-red-line')) {
 }
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 The Thin Red Line

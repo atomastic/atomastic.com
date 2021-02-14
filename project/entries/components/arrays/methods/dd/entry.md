@@ -38,7 +38,7 @@ $arrays = Arrays::create([
 $arrays->dd('var_dump');
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 array(1) {

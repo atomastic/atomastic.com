@@ -29,7 +29,7 @@ print_r($arrays);
 print_r($arrays2);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

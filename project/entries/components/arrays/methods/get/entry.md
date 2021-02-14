@@ -41,7 +41,7 @@ $title = $arrays->get('movies.the_thin_red_line.title');
 print_r($title);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 The Thin Red Line

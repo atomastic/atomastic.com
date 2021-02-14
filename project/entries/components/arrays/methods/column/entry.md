@@ -38,7 +38,7 @@ print_r($arrays2->toArray());
 print_r($arrays3->toArray());
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

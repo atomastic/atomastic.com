@@ -24,7 +24,7 @@ $arrays = Arrays::create([0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red'])->s
 print_r($arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

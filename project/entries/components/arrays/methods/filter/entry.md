@@ -30,7 +30,7 @@ $arrays = Arrays::create([6, 7, 8, 9, 10, 11, 12])->filter(function($var) {
 print_r($arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

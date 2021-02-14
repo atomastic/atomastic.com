@@ -30,7 +30,7 @@ var_dump($arrays1);
 var_dump($arrays2);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 bool(true)

@@ -34,7 +34,7 @@ echo $arrays->customMethod(1, 2);
 echo $arrays->customMethod();
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```
 6

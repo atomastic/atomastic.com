@@ -34,7 +34,7 @@ $result = $arrays->toArray();
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

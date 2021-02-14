@@ -29,7 +29,7 @@ $arrays = Arrays::create(['php', 8, ['green', 'red']])
 print_r($arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

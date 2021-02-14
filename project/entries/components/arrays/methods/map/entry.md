@@ -25,7 +25,7 @@ $arrays = Arrays::create([1, 2, 3, 4, 5])
 print_r($arrays);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

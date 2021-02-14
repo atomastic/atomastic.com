@@ -34,7 +34,7 @@ $result = Arrays::create(['items' => ['catalog' => ['nums' => [10, 20, 30]]]])
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 60

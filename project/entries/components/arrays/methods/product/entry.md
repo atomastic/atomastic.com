@@ -21,7 +21,7 @@ $result = Arrays::create([2, 2, 2])->product();
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 8

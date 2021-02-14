@@ -21,7 +21,7 @@ $result = Arrays::create([1, 2, 3, 4, 5])->getValues();
 print_r($result);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 Array

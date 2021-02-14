@@ -45,7 +45,7 @@ $result2 = $arrays2->toString(',', false, false);
 print_r($result2);
 ```
 
-##### The above example will output:
+#### The above example will output:
 
 ```text
 TheThinRedLine,TerrenceMalick,RobertMichael,GeislerGrantHill,JohnRoberdeau,AdaptationofJamesJonesautobiographical1962novel,focusingontheconflictatGuadalcanalduringthesecondWorldWar.
