@@ -26,5 +26,5 @@ echo $string;
 #### The above example will output:
 
 ```text
-FooBar
+foo_bar
 ```
