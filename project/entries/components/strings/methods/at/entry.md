@@ -24,5 +24,5 @@ echo $character;
 #### The above example will output:
 
 ```text
-1
+l
 ```
