@@ -27,8 +27,12 @@
             <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
-            {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
-            {% do flextype.registry.set('assets.site.css.ness', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
+
+            {% if (currentUrl() != '' or currentUrl() != '/' or currentUrl() != 'home') %}
+                {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
+            {% endif %}
+
+            {% do flextype.registry.set('assets.site.css.theme', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
 
             {% if flextype.registry.has('assets.site.css') %}
                 {% for css in flextype.registry.get('assets.site.css') %}
@@ -97,15 +101,18 @@
             </footer>
         </main>
 
-        {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
-        <script src="{{ highlight_js }}"></script>
+        {% if (currentUrl() != '' and currentUrl() != '/' and currentUrl() != 'home') %}
+            {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
+            <script src="{{ highlight_js }}"></script>
 
-        <script>
-            hljs.configure({useBR: false});
-            document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightBlock(block);
-            });
-        </script>
+            <script>
+                hljs.configure({useBR: false});
+                document.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            </script>
+        {% endif %}
+
 
         {% if flextype.registry.has('assets.site.js') %}
             {% for js in flextype.registry.get('assets.site.js') %}
