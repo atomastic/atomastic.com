@@ -37,7 +37,7 @@
 
             {% if flextype.registry.has('assets.site.css') %}
                 {% for css in flextype.registry.get('assets.site.css') %}
-                    <link href="{{ url() }}/{{ css }}" rel="stylesheet">
+                    <link href="{{ url() }}/{{ css }}?v=1" rel="stylesheet">
                 {% endfor %}
             {% endif %}
             {% do flextype.emitter.emit('onThemeHeader') %}
