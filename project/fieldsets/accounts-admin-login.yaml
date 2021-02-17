@@ -1,0 +1,29 @@
+title: Login
+default_field: title
+icon:
+  name: user
+  set: "fontawesome|solid"
+size: 4/12
+hide: true
+form:
+  name: login
+  messages:
+    success: false
+    error: false
+  buttons:
+    submit:
+      type: submit
+      title: accounts_admin_login
+    forgot_password:
+      type: link
+      title: accounts_admin_forgot_password
+      href: ./reset-password
+  fields:
+    email:
+      title: accounts_admin_email
+      type: email
+      size: 12
+    password:
+      title: accounts_admin_password
+      type: password
+      size: 12

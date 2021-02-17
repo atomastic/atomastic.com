@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="{{ flextype.registry.get('flextype.settings.locale') }}">
+    <head>
+        {% block head %}
+            <meta charset="{{ flextype.registry.get('flextype.settings.charset')|lower }}">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="{% if entry.description %}{{ entry.description }}{% else %}{{ flextype.registry.get('plugins.site.settings.description') }}{% endif %}">
+            <meta name="keywords" content="{% if entry.keywords %}{{ entry.keywords }}{% else %}{{ flextype.registry.get('plugins.site.settings.keywords') }}{% endif %}">
+            <meta name="robots" content="{% if entry.robots %}{{ entry.robots }}{% else %}{{ flextype.registry.get('plugins.site.settings.robots') }}{% endif %}">
+            <meta name="generator" content="Powered by Flextype"/>
+
+            {% do flextype.emitter.emit('onThemeMeta') %}
+
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ url() }}/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="{{ url() }}/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="{{ url() }}/favicon-16x16.png">
+            <link rel="manifest" href="{{ url() }}/site.webmanifest">
+            <link type="text/plain" href="{{ url() }}/humans.txt" rel="author">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">
+
+            <title>
+                {% if entry.title %}{{ entry.title|e('html') }}
+                    |
+                {% endif %}{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</title>
+
+            {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
+
+            {% if (currentUrl() != '' or currentUrl() != '/' or currentUrl() != 'home') %}
+                {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
+            {% endif %}
+
+            {% do flextype.registry.set('assets.site.css.theme', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
+
+            {% if flextype.registry.has('assets.site.css') %}
+                {% for css in flextype.registry.get('assets.site.css') %}
+                    <link href="{{ url() }}/{{ css }}" rel="stylesheet">
+                {% endfor %}
+            {% endif %}
+            {% do flextype.emitter.emit('onThemeHeader') %}
+        {% endblock %}
+    </head>
+    <body>
+        <nav class="bg-white text-black">
+            <div class="container mx-auto pl-16 pr-16 pt-6 pb-6 clearfix flex flex-wrap">
+                <div class="
+                          text-center lg:text-left
+                          flex-1 text-black py-2 uppercase tracking-wide">
+                    <a href="{{ url() }}" class="w-full lg:w-2/12 text-center text-base no-underline">{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</a>
+                </div>
+                {#<div class="flex-1">
+                    <input type="text" id="search" class="search" placeholder="Search...">
+                </div>#}
+                <div class="flex-1 font-noirpro-semibold">
+                    <div class="text-right p-2">
+                        {% for item in flextype.entries.fetch('', {'collection': true}).sortBy('menu_item_order', 'ASC').all() %}
+                            {% if item.menu_item_title %}
+                                <a
+                                    href="{{ url() }}/{{ item.menu_item_url }}"
+                                    class="uppercase
+                                  relative
+                                  block
+                                  text-black
+                                  text-center
+                                  no-underline
+                                  mr-0
+                                  {% if item.menu_item_url in entry.id %}border-black{% else %}border-white{% endif %}
+                                  border-b-2
+                                  hover:border-black
+                                  lg:inline-block
+                                  {% if loop.last %}lg:mr-0{% else %}lg:mr-4{% endif %}">
+                                    {{ item.menu_item_title }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container mx-auto">
+            <section id="content" class="px-16">
+                {% block content %}{% endblock %}
+            </section>
+            <footer class="text-left pl-16 pr-16 pt-24 pb-16">
+                {% block footer %}
+                    <div class="text-xs uppercase flex flex-wrap">
+                        <div class="flex-1">
+                            Copyright © 2021 - <a rel="nofollow" href="https://github.com/Awilum" target="_blank">Sergey Romanenko</a> <br>
+                            Powered by <a href="https://flextype.org" target="_blank">Flextype</a> <br>
+                            <a href="{{ url() }}/sitemap.xml">View Sitemap</a>
+                        </div>
+                        <div class="flex-1 text-right">
+                            <a rel="nofollow" href="https://github.com/atomastic">Github</a> /
+                            <a rel="nofollow" href="https://twitter.com/atomastic">Twitter</a>
+                        </div>
+                    </div>
+                {% endblock %}
+            </footer>
+        </main>
+
+        {% if (currentUrl() != '' and currentUrl() != '/' and currentUrl() != 'home') %}
+            {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
+            <script src="{{ highlight_js }}"></script>
+
+            <script>
+                hljs.configure({useBR: false});
+                document.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            </script>
+        {% endif %}
+
+
+        {% if flextype.registry.has('assets.site.js') %}
+            {% for js in flextype.registry.get('assets.site.js') %}
+                {% if js %}
+                    <script type="text/javascript" src="{{ url() }}/{{ js }}"></script>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% do flextype.emitter.emit('onThemeTail') %}
+    </body>
+</html>

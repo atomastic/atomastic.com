@@ -1,0 +1,45 @@
+title: 'Edit Account'
+default_field: title
+icon:
+  name: user
+  set: "fontawesome|solid"
+size: 4/12
+hide: true
+form:
+  name: edit-account
+  messages:
+    success: false
+    error: false
+  buttons:
+    submit:
+      type: submit
+      title: accounts_admin_save
+  fields:
+    full_name:
+      title: accounts_admin_full_name
+      type: text
+      size: 12
+    email:
+      title: accounts_admin_email
+      type: email
+      size: 12
+      validation:
+        required: true
+        pattern: '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$'
+    roles:
+      title: accounts_admin_roles
+      type: tags
+      size: 12
+      validation:
+        required: false
+    state:
+      title: accounts_admin_state
+      type: select
+      options: { enabled: enabled, disabled: disabled }
+      size: 12
+    new_password:
+      title: accounts_admin_new_password
+      type: password
+      size: 12
+      validation:
+        pattern: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
