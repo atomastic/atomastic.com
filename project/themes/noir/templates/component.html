@@ -118,59 +118,61 @@
             {% endif %}
         </div>
         <div class="pt-4 pb-4 pl-10 w-3/12">
-            <h4 class="mb-2">Getting Started</h4>
-            <ul>
-                {% for item in gettingStarted %}
-                <li class="mb-2"><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
-                {% endfor %}
-            </ul>
-            <h4 class="mt-4 mb-2">Methods</h4>
-            {% if uri1 == 'filesystem' %}
-                <h5 class="mb-2 font-bold">Filesystem</h5>
+            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
+                <h4 class="mb-2">Getting Started</h4>
                 <ul>
-                    {% for item in methods['filesystem'] %}
-                    <li class="mb-2">
-                        <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
-                        <small class="opacity-75 block">
-                            {{ item.description }}
-                        </small>
-                    </li>
+                    {% for item in gettingStarted %}
+                    <li class="mb-2"><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></li>
                     {% endfor %}
                 </ul>
-                <h5 class="mb-2 font-bold">File</h5>
-                <ul>
-                    {% for item in methods['file'] %}
-                    <li class="mb-2">
-                        <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
-                        <small class="opacity-75 block">
-                            {{ item.description }}
-                        </small>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <h5 class="mb-2 font-bold">Directory</h5>
-                <ul>
-                    {% for item in methods['directory'] %}
-                    <li class="mb-2">
-                        <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
-                        <small class="opacity-75 block">
-                            {{ item.description }}
-                        </small>
-                    </li>
-                    {% endfor %}
-                </ul>
-            {% else %}
-                <ul>
-                    {% for item in methods %}
-                    <li class="mb-2">
-                        <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
-                        <small class="opacity-75 block">
-                            {{ item.description }}
-                        </small>
-                    </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+                <h4 class="mt-4 mb-2">Methods</h4>
+                {% if uri1 == 'filesystem' %}
+                    <h5 class="mb-2 font-bold">Filesystem</h5>
+                    <ul>
+                        {% for item in methods['filesystem'] %}
+                        <li class="mb-2">
+                            <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
+                            <small class="opacity-75 block">
+                                {{ item.description }}
+                            </small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <h5 class="mb-2 font-bold">File</h5>
+                    <ul>
+                        {% for item in methods['file'] %}
+                        <li class="mb-2">
+                            <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
+                            <small class="opacity-75 block">
+                                {{ item.description }}
+                            </small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <h5 class="mb-2 font-bold">Directory</h5>
+                    <ul>
+                        {% for item in methods['directory'] %}
+                        <li class="mb-2">
+                            <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
+                            <small class="opacity-75 block">
+                                {{ item.description }}
+                            </small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <ul>
+                        {% for item in methods %}
+                        <li class="mb-2">
+                            <a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a>
+                            <small class="opacity-75 block">
+                                {{ item.description }}
+                            </small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
         </div>
     </div>
 {% endblock %}
