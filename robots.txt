@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /src/
+Disallow: /project/
+Disallow: /vendor/
