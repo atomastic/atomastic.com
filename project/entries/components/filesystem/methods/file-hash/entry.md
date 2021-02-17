@@ -17,7 +17,7 @@ public function hash(): string
 #### Examples
 
 ```php
-$result = $filesystem->hash('/foo/1.txt');
+$result = $filesystem->file('/foo/1.txt')->hash();
 
 echo $result;
 ```

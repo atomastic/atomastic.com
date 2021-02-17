@@ -17,7 +17,7 @@ public function isFile(): bool
 #### Examples
 
 ```php
-if ($filesystem->isFile('/foo/1.txt')) {
+if ($filesystem->file('/foo/1.txt')->isFile()) {
     // do something...
 }
 ```

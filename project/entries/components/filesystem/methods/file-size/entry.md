@@ -17,5 +17,5 @@ public function size(): int
 #### Examples
 
 ```php
-$result = $filesystem->size('/foo/1.txt');
+$result = $filesystem->file('/foo/1.txt')->size();
 ```

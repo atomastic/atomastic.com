@@ -17,7 +17,7 @@ public function isWritable(): bool
 #### Examples
 
 ```php
-if ($filesystem->isWritable('/foo/1.txt')) {
+if ($filesystem->file('/foo/1.txt')->isWritable()) {
     // do something...
 }
 ```

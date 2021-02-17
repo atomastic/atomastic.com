@@ -17,7 +17,7 @@ public function isReadable(): bool
 #### Examples
 
 ```php
-if ($filesystem->isReadable('/foo/1.txt')) {
+if ($filesystem->file('/foo/1.txt')->isReadable()) {
     // do something...
 }
 ```
