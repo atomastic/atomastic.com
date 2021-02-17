@@ -1,0 +1,16 @@
+{% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
+
+{% block content %}
+    <!-- introducing section -->
+    <div class="container relative mx-auto mb-10">
+        <div class="text-center">
+            <h1 class="uppercase m-0 p-24 text-xl lg:text-5xl" style="line-height: 80px;">A set of decoupled and reusable PHP building blocks for kickass Web Applications.</h1>
+            <div class="flex justify-center">
+                <a
+                    href="{{ baseUrl() }}/components"
+                    class="w-10/12 lg:w-3/12 button">Browse Components</a>
+            </div>
+        </div>
+    </div>
+    <!-- /introducing section -->
+{% endblock %}
