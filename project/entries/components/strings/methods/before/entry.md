@@ -1,25 +1,24 @@
 ---
-title: between
+title: before
 template: component
-description: Get the portion of a string between two given values.
+description: Get the portion of a string before the first occurrence of a given value.
 ---
 
 ```php
 /**
- * Get the portion of a string between two given values.
+ * Get the portion of a string before the first occurrence of a given value.
  *
- * @param  string $from From
- * @param  string $to   To
+ * @param string $search Search
  *
  * @return self Returns instance of The Strings class.
  */
-public function between(string $from, string $to): self
+public function before(string $search): self
 ```
 
 #### Examples
 
 ```php
-$string = Strings::create('SG-1 returns from an off-world mission')->between('SG-1', 'from');
+$string = Strings::create('SG-1 returns from an off-world mission')->before('mission');
 
 echo $string;
 ```
@@ -27,5 +26,5 @@ echo $string;
 #### The above example will output:
 
 ```text
- returns
+SG-1 returns from an off-world
 ```
