@@ -26,6 +26,6 @@
     "gulp-sourcemaps": "^2.6.5",
     "postcss-import": "^12.0.1",
     "@fullhuman/postcss-purgecss": "^2.0.6",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^2.0.3"
   }
 }
