@@ -6,7 +6,15 @@
             <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
         </div>
     </div>
-    {% set components = flextype.entries.fetch('components', {'collection': true}).sortByAsc('title') %}
+    
+    {% set componentsCacheID = strings('componentsCacheID').hash().toString() %}
+    {% if flextype.cache.has(componentsCacheID) %}
+        {% set components = flextype.cache.get(componentsCacheID) %}
+    {% else %}
+        {% set components = flextype.entries.fetch('components', {'collection': true}).exceptFromCollection(['content']).sortByAsc('title') %}
+        {% do flextype.cache.set(componentsCacheID, components) %}
+    {% endif %}
+
     <div class="flex flex-wrap">
         {% for component in components %}
         <a href="{{ url() }}/{{ component.id }}" class="p-4 w-4/12 cursor-pointer no-underline">
