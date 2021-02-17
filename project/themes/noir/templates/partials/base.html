@@ -24,8 +24,6 @@
                     |
                 {% endif %}{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</title>
 
-            <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
 
             {% if (currentUrl() != '' or currentUrl() != '/' or currentUrl() != 'home') %}
