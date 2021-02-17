@@ -1,4 +1,4 @@
 ---
 title: Home
-template: default
+template: home
 ---
