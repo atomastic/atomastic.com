@@ -19,18 +19,24 @@
         </div>
         <div>
             <span class="opacity-50"><a class="no-underline" href="{{ url() }}/components">COMPONENTS</a></span>
-            {% if uri2 %}
+            {% if uri2 == 'methods' %}
             <span class="opacity-50">/</span>
             <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}">{{ flextype.entries.fetch('components/' ~ uri1).title }}</a></span>
             <span class="opacity-50">/</span>
             <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}/{{ uri2 }}">METHODS</a></span>
+            {% endif %}
+            {% if uri2 == 'getting-started' %}
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}">{{ flextype.entries.fetch('components/' ~ uri1).title }}</a></span>
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="{{ url() }}/components/{{ uri1 }}/{{ uri2 }}">GETTING STARTED</a></span>
             {% endif %}
         </div>
     </div>
     <div class="flex flex-wrap">
         <div class="p-4 w-9/12">
             {{ entry.content|shortcode|markdown|raw }}
-            {% if not uri2 %}
+            {% if (uri3 == '' and uri2 == 'methods') or (uri1 and uri2 == '' and uri3 == '')%}
                 {% if uri1 == 'filesystem' %}
                     <h4>Filesystem</h4>
                     <div class="table">
@@ -120,7 +126,7 @@
             </ul>
             <h4 class="mt-4 mb-2">Methods</h4>
             {% if uri1 == 'filesystem' %}
-                <h5>Filesystem</h5>
+                <h5 class="mb-2 font-bold">Filesystem</h5>
                 <ul>
                     {% for item in methods['filesystem'] %}
                     <li class="mb-2">
@@ -131,7 +137,7 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <h5>File</h5>
+                <h5 class="mb-2 font-bold">File</h5>
                 <ul>
                     {% for item in methods['file'] %}
                     <li class="mb-2">
@@ -142,7 +148,7 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <h5>Directory</h5>
+                <h5 class="mb-2 font-bold">Directory</h5>
                 <ul>
                     {% for item in methods['directory'] %}
                     <li class="mb-2">
