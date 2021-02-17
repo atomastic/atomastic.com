@@ -1,7 +1,7 @@
 {% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
 
 {% block content %}
-    <div class="uppercase text-center pt-20 pb-20 m-0">
+    <div class="uppercase text-center pt-10 pb-10 lg:pt-20 lg:pb-20 m-0">
         <div>
             <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
         </div>

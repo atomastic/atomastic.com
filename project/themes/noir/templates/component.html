@@ -2,9 +2,9 @@
 
 {% block content %}
 
-    {% set uri1 = request.getUri().getPath()|split('/').2 %}
-    {% set uri2 = request.getUri().getPath()|split('/').3 %}
-    {% set uri3 = request.getUri().getPath()|split('/').4 %}
+    {% set uri1 = request.getUri().getPath()|split('/').1 %}
+    {% set uri2 = request.getUri().getPath()|split('/').2 %}
+    {% set uri3 = request.getUri().getPath()|split('/').3 %}
 
     {% set gettingStartedCacheID = strings('gettingStartedCacheID' ~ 'components/' ~ uri1 ~ '/getting-started').hash().toString() %}
     {% if flextype.cache.has(gettingStartedCacheID) %}
@@ -26,11 +26,11 @@
         {% set methods = arrays(methods).groupBy('class') %}
     {% endif %}
 
-    <div class="text-center pt-20 pb-20 m-0">
+    <div class="text-center pt-10 pb-10 lg:pt-20 lg:pb-20 m-0">
         <div>
             <h1 class="text-3xl lg:text-6xl mb-0 {% if uri3 == '' or uri2 == 'getting-started' %}uppercase{% endif %}"><a class="no-underline" href="{{ url() }}/{{ entry.id }}">{{ entry.title }}</a></h1>
         </div>
-        <div>
+        <div class="text-sm lg:text-normal">
             <span class="opacity-50"><a class="no-underline" href="{{ url() }}/components">COMPONENTS</a></span>
             {% if uri2 == 'methods' %}
             <span class="opacity-50">/</span>
@@ -60,14 +60,14 @@
                                     <th>Description</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             {% for item in methods['filesystem'] %}
-                                <tbody>
-                                    <tr>
-                                        <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
-                                        <td>{{ item.description }}</td>
-                                    </tr>
-                                </tbody>
+                                <tr>
+                                    <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
+                                    <td>{{ item.description }}</td>
+                                </tr>
                             {% endfor %}
+                            </tbody>
                         </table>
                     </div>
                     <h4>File</h4>
@@ -79,14 +79,14 @@
                                     <th>Description</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             {% for item in methods['file'] %}
-                                <tbody>
-                                    <tr>
-                                        <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
-                                        <td>{{ item.description }}</td>
-                                    </tr>
-                                </tbody>
+                                <tr>
+                                    <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
+                                    <td>{{ item.description }}</td>
+                                </tr>
                             {% endfor %}
+                            </tbody>
                         </table>
                     </div>
                     <h4>Directory</h4>
@@ -98,39 +98,39 @@
                                     <th>Description</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             {% for item in methods['directory'] %}
-                                <tbody>
-                                    <tr>
-                                        <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
-                                        <td>{{ item.description }}</td>
-                                    </tr>
-                                </tbody>
+                                <tr>
+                                    <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
+                                    <td>{{ item.description }}</td>
+                                </tr>
                             {% endfor %}
+                            </tbody>
                         </table>
                     </div>
                 {% else %}
                     <div class="table">
                         <table>
                             <thead>
-                                <tr>
+                                <tr class="hidden lg:table-row">
                                     <th>Method</th>
                                     <th>Description</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             {% for item in methods %}
-                                <tbody>
-                                    <tr>
-                                        <td><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
-                                        <td>{{ item.description }}</td>
-                                    </tr>
-                                </tbody>
+                                <tr>
+                                    <td class="flex lg:table-cell"><a href="{{ url() }}/{{ item.id }}">{{ item.title }}</a></td>
+                                    <td class="flex lg:table-cell">{{ item.description }}</td>
+                                </tr>
                             {% endfor %}
+                            </tbody>
                         </table>
                     </div>
                 {% endif %}
             {% endif %}
         </div>
-        <div class="pt-4 pb-4 pl-10 lg:w-3/12">
+        <div class="pt-4 pb-4 lg:pl-10 lg:w-3/12">
             <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
                 <h4 class="mb-2">Getting Started</h4>
                 <ul>

@@ -1,15 +1,15 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 18px;
-    color: #090e24;
+    font-size: 16px;
+    color: #1e1f20;
 }
 
 a {
     @apply underline;
 }
 
-table tr {
-    border-bottom: 1px solid #090e24;
+table tbody tr {
+    @apply border-t;
 }
 
 table {
@@ -24,28 +24,27 @@ th, td {
     padding-right: 20px;
     padding-top: 10px;
     vertical-align: middle;
-    border-color: #090e24;
+    @apply border-gray-100
 }
 
 
 .table {
     overflow: hidden;
-    border: 1px solid #090e24;
-    box-shadow: 3px 3px 0 #090e24;
     margin-bottom: 40px;
     width: 100%;
+    background: rgb(250, 251, 252);
+    @apply rounded-xl border-gray-100 border;
 }
 
 .table table thead {
+    @apply border-gray-100 border-b-0;
     background: #f8f9fb;
 }
 
 .button {
-    box-shadow: 3px 3px 0 #090e24;
-    border: 1px solid #090e24;
-    @apply inline-block no-underline uppercase text-center text-lg relative pr-2 pl-2 pt-6 pb-6 border-black bg-white border text-black;
+    @apply rounded-xl inline-block no-underline uppercase text-center text-lg relative pr-2 pl-2 pt-6 pb-6 border-black bg-white border text-black;
 }
 
 .button:hover {
-    box-shadow: 3px 3px 0 #333;
+    @apply bg-gray-100;
 }
