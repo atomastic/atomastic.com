@@ -26,7 +26,7 @@
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
 
-            {% if (currentUrl() != '' or currentUrl() != '/' or currentUrl() != 'home') %}
+            {% if (currentUrl() != '/')  %}
                 {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
             {% endif %}
 
@@ -99,7 +99,7 @@
             </footer>
         </main>
 
-        {% if (currentUrl() != '' and currentUrl() != '/' and currentUrl() != 'home') %}
+        {% if (currentUrl() != '/')  %}
             {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
             <script src="{{ highlight_js }}"></script>
 
