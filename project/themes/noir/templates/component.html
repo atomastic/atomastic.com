@@ -2,9 +2,9 @@
 
 {% block content %}
 
-    {% set uri1 = request.getUri().getPath()|split('/').1 %}
-    {% set uri2 = request.getUri().getPath()|split('/').2 %}
-    {% set uri3 = request.getUri().getPath()|split('/').3 %}
+    {% set uri1 = request.getUri().getPath()|split('/').2 %}
+    {% set uri2 = request.getUri().getPath()|split('/').3 %}
+    {% set uri3 = request.getUri().getPath()|split('/').4 %}
 
     {% set gettingStartedCacheID = strings('gettingStartedCacheID' ~ 'components/' ~ uri1 ~ '/getting-started').hash().toString() %}
     {% if flextype.cache.has(gettingStartedCacheID) %}
