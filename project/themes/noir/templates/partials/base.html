@@ -78,16 +78,13 @@
                                 <a
                                     href="{{ url() }}/{{ item.menu_item_url }}"
                                     class="uppercase
-                                  relative
-                                  block
-                                  text-center
-                                  no-underline
-                                  mr-0
-                                  {% if item.menu_item_url in entry.id %}border-black{% else %}border-white{% endif %}
-                                  border-b-2
-                                  hover:border-black
-                                  lg:inline-block
-                                  {% if loop.last %}lg:mr-0{% else %}lg:mr-4{% endif %}">
+                                           relative
+                                           block
+                                           text-center
+                                           no-underline
+                                           mr-0
+                                           lg:inline-block
+                                           {% if loop.last %}lg:mr-0{% else %}lg:mr-4{% endif %}">
                                     {{ item.menu_item_title }}
                                 </a>
                             {% endif %}
