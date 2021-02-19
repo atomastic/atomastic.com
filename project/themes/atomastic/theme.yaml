@@ -1,0 +1,15 @@
+name: Atomastic
+version: 1.0.0
+description: Atomastic theme for atomastic.com.
+author:
+  name: Sergey Romanenko
+  email: sergey.romanenko@flextype.org
+  url: https://atomastic.com
+homepage: https://github.com/atomastic/atomastic.com
+bugs: https://github.com/atomastic/atomastic.com/issues
+license: MIT
+
+dependencies:
+  flextype: 0.9.16
+  site: '>=1.0.0'
+  twig: '>=2.0.0'

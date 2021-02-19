@@ -1,20 +1,15 @@
 {
-  "name": "Noir",
-  "version": "1.9.0",
-  "description": "Noir theme for Flextype.",
-  "homepage": "https://flextype.org",
+  "name": "Atomastic",
+  "version": "1.0.0",
+  "description": "Atomastic theme for Atomastic.com",
+  "homepage": "https://atomastic.com",
   "author": "Sergey Romanenko",
   "license": "MIT",
   "keywords": [
-    "flextype",
-    "cms",
-    "flat cms",
-    "flatfile cms",
-    "css",
-    "html"
+    "atomastic"
   ],
   "bugs": {
-    "url": "https://github.com/flextype-themes/noir/issues"
+    "url": "https://github.com/atomastic/atomastic.com/issues"
   },
   "dependencies": {
     "gulp": "^4.0.2",
