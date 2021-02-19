@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOIR
+ * atomastic.com
  */
 
 declare(strict_types=1);
