@@ -29,17 +29,19 @@
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
 
+            <style type="text/css">
             {% if (currentUrl() != '/')  %}
-                {% do flextype.registry.set('assets.site.css.highlight', 'project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.css') %}
+            {{ filesystem().file(url() ~ '/project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.min.css').get()|raw }}
             {% endif %}
-
-            {% do flextype.registry.set('assets.site.css.theme', 'project/themes/' ~ theme ~ '/assets/dist/css/build.min.css') %}
+            {{ filesystem().file(url() ~ '/project/themes/' ~ theme ~ '/assets/dist/css/build.min.css').get()|raw }}
+            </style>
 
             {% if flextype.registry.has('assets.site.css') %}
                 {% for css in flextype.registry.get('assets.site.css') %}
                     <link href="{{ url() }}/{{ css }}?v=11" rel="stylesheet">
                 {% endfor %}
             {% endif %}
+
             {% do flextype.emitter.emit('onThemeHeader') %}
 
             <!-- Matomo -->
@@ -118,7 +120,6 @@
         {% if (currentUrl() != '/')  %}
             {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
             <script src="{{ highlight_js }}"></script>
-
             <script>
                 hljs.configure({useBR: false});
                 document.querySelectorAll('pre code').forEach((block) => {
