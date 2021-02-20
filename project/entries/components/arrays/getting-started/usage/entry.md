@@ -19,7 +19,7 @@ $arrays = arrays();
 ### Extending
 
 Arrays are "macroable", which allows you to add additional methods to the Arrays class at run time. For example, the following code adds a customMethod method to the Arrays class:
-
+<br><br>
 ```php
 use Atomastic\Arrays\Arrays;
 use Atomastic\Macroable\Macroable;
