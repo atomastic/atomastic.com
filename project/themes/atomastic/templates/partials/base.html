@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ flextype.registry.get('flextype.settings.locale') }}">
+<html lang="en">
     <head>
         {% block head %}
             <meta charset="{{ flextype.registry.get('flextype.settings.charset')|lower }}">
@@ -55,7 +55,6 @@
                 g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
               })();
             </script>
-            <noscript><p><img src="https://digital.flextype.org/matomo/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="Matomo for atomastic.com" /></p></noscript>
             <!-- End Matomo Code -->
         {% endblock %}
     </head>
