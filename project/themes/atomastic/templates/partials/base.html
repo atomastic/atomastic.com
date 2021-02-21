@@ -22,15 +22,12 @@
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="theme-color" content="#ffffff">
 
-            <title>
-                {% if entry.title %}{{ entry.title|e('html') }}
-                    |
-                {% endif %}{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}</title>
+            <title>{% include "themes/atomastic/templates/partials/seo-title.html" %}</title>
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
 
             <style type="text/css">
-            {% if (currentUrl() != '/')  %}
+            {% if (strings(entry.id != 'home')) %}
             {{ filesystem().file(url() ~ '/project/themes/' ~ theme ~ '/assets/highlight/styles/atom-one-light.min.css').get()|raw }}
             {% endif %}
             {{ filesystem().file(url() ~ '/project/themes/' ~ theme ~ '/assets/dist/css/build.min.css').get()|raw }}
@@ -73,7 +70,7 @@
                 {#<div class="flex-1">
                     <input type="text" id="search" class="search" placeholder="Search...">
                 </div>#}
-                <div class="flex-1 font-noirpro-semibold">
+                <div class="flex-1">
                     <div class="text-right p-2">
                         {% for item in flextype.entries.fetch('', {'collection': true}).sortBy('menu_item_order', 'ASC').all() %}
                             {% if item.menu_item_title %}
@@ -117,7 +114,7 @@
             </footer>
         </main>
 
-        {% if (currentUrl() != '/')  %}
+        {% if (strings(entry.id != 'home')) %}
             {% set highlight_js = url() ~ '/project/themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/assets/highlight/highlight.pack.js' %}
             <script src="{{ highlight_js }}"></script>
             <script>
