@@ -2,7 +2,14 @@
 title: all
 template: component
 description: Get all items from stored array.
+seo:
+  title: Get all items from stored array | all
+  description: You may get all items from stored array with help of method all
 ---
+
+<h2 class="font-normal text-lg">
+Get all items from stored array.
+</h2>
 
 ```php
 /**
