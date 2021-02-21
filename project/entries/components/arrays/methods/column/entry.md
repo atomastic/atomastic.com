@@ -4,6 +4,9 @@ template: component
 description: Get the values of a single column from an arrays items.
 ---
 
+<h2 class="font-normal text-lg">
+Get the values of a single column from an arrays items.
+</h2>
 
 ```php
 /**
@@ -46,11 +49,13 @@ Array
     [0] => v1
     [1] => v2
 )
+
 Array
 (
     [i1] => v1
     [i2] => v2
 )
+
 Array
 (
     [i1] => Array
