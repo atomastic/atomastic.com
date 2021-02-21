@@ -4,6 +4,10 @@ template: component
 description: Shuffle the given array and return the result.
 ---
 
+<h2 class="font-normal text-lg">
+Shuffle the given array and return the result.
+</h2>
+
 ```php
 /**
  * Shuffle the given array and return the result.

@@ -4,6 +4,10 @@ template: component
 description: Searches the array for a given value and returns the first corresponding key if successful.
 ---
 
+<h2 class="font-normal text-lg">
+Searches the array for a given value and returns the first corresponding key if successful.
+</h2>
+
 ```php
 /**
  * Searches the array for a given value and returns the first corresponding key if successful.

@@ -4,6 +4,10 @@ template: component
 description: Extract array items with every nth item from the array.
 ---
 
+<h2 class="font-normal text-lg">
+Extract array items with every nth item from the array.
+</h2>
+
 ```php
 /**
  * Extract array items with every nth item from the array.

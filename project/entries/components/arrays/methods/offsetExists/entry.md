@@ -4,6 +4,10 @@ template: component
 description: Whether an offset exists.
 ---
 
+<h2 class="font-normal text-lg">
+Whether an offset exists.
+</h2>
+
 ```php
 /**
  * Whether an offset exists.

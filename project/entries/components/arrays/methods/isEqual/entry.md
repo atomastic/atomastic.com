@@ -8,7 +8,6 @@ description: Check if the current array is equal to the given $array or not.
 Check if the current array is equal to the given $array or not.
 </h2>
 
-
 ```php
 /**
  * Check if the current array is equal to the given $array or not.

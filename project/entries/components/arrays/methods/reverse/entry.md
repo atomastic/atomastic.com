@@ -4,6 +4,10 @@ template: component
 description: Reverse the values order of the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Reverse the values order of the current array.
+</h2>
+
 ```php
 /**
  * Reverse the values order of the current array.

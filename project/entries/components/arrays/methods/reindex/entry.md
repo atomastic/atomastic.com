@@ -4,6 +4,10 @@ template: component
 description: Create a numerically re-indexed array based on the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Create a numerically re-indexed array based on the current array.
+</h2>
+
 ```php
 /**
  * Create a numerically re-indexed array based on the current array.

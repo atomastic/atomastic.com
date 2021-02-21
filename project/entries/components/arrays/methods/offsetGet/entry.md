@@ -4,6 +4,10 @@ template: component
 description: Offset to retrieve.
 ---
 
+<h2 class="font-normal text-lg">
+Offset to retrieve.
+</h2>
+
 ```php
 /**
  * Offset to retrieve.

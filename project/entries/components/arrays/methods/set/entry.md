@@ -4,6 +4,10 @@ template: component
 description: Set an array item to a given value using "dot" notation.
 ---
 
+<h2 class="font-normal text-lg">
+Set an array item to a given value using "dot" notation.
+</h2>
+
 ```php
 /**
  * Set an array item to a given value using "dot" notation.

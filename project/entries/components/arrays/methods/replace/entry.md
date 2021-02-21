@@ -4,6 +4,10 @@ template: component
 description: Replace values in the current array with values in the given one that have the same key.
 ---
 
+<h2 class="font-normal text-lg">
+Replace values in the current array with values in the given one that have the same key.
+</h2>
+
 ```php
 /**
  * Replace values in the current array with values in the given one

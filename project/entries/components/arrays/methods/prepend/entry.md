@@ -4,6 +4,11 @@ template: component
 description: Push an item into the beginning of an array.
 ---
 
+<h2 class="font-normal text-lg">
+Push an item into the beginning of an array.
+</h2>
+
+
 ```php
 /**
  * Push an item into the beginning of an array.

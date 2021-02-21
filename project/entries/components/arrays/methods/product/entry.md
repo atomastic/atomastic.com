@@ -4,6 +4,10 @@ template: component
 description: Calculate the product of values in the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Calculate the product of values in the current array.
+</h2>
+
 ```php
 /**
  * Calculate the product of values in the current array.
