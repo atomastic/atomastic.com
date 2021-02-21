@@ -4,6 +4,10 @@ template: component
 description: Apply the given function to the every element of the current array, discarding the results.
 ---
 
+<h2 class="font-normal text-lg">
+Apply the given function to the every element of the current array, discarding the results.
+</h2>
+
 ```php
 /**
  * Apply the given function to the every element of the current array,

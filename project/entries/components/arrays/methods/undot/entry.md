@@ -4,6 +4,10 @@ template: component
 description: Expands a dot notation array into a full multi-dimensional array.
 ---
 
+<h2 class="font-normal text-lg">
+Expands a dot notation array into a full multi-dimensional array.
+</h2>
+
 ```php
 /**
  * Expands a dot notation array into a full multi-dimensional array.

@@ -4,6 +4,10 @@ template: component
 description: Calculate the sum of values in the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Sorts array by keys.
+</h2>
+
 ```php
 /**
  * Calculate the sum of values in the current array.

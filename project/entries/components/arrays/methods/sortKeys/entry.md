@@ -4,6 +4,10 @@ template: component
 description: Sorts array by keys.
 ---
 
+<h2 class="font-normal text-lg">
+Sorts array by keys.
+</h2>
+
 ```php
 /**
  * Sorts array by keys.

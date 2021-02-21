@@ -4,6 +4,10 @@ template: component
 description: Filters the array items by the given key is between the given values.
 ---
 
+<h2 class="font-normal text-lg">
+Filters the array items by the given key is between the given values.
+</h2>
+
 ```php
 /**
  * Filters the array items by the given key is between the given values.

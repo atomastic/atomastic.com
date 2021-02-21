@@ -4,6 +4,10 @@ template: component
 description: Convert the current array to JSON.
 ---
 
+<h2 class="font-normal text-lg">
+Convert the current array to JSON.
+</h2>
+
 ```php
 /**
  * Convert the current array to JSON.

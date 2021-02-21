@@ -4,6 +4,10 @@ template: component
 description: Get all items from stored array and convert them to array.
 ---
 
+<h2 class="font-normal text-lg">
+Get all items from stored array and convert them to array.
+</h2>
+
 ```php
 /**
  * Get all items from stored array and convert them to array.

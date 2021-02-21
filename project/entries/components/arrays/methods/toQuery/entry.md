@@ -4,6 +4,10 @@ template: component
 description: Convert the array into a query string.
 ---
 
+<h2 class="font-normal text-lg">
+Convert the array into a query string.
+</h2>
+
 ```php
 /**
  * Convert the array into a query string.

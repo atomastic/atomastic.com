@@ -4,6 +4,9 @@ template: component
 description: Filters the array items by the given key is less the given value.
 ---
 
+<h2 class="font-normal text-lg">
+Filters the array items by the given key is less the given value.
+</h2>
 
 ```php
 /**

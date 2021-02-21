@@ -4,6 +4,10 @@ template: component
 description: Filters the array items by the given key is starts with given value.
 ---
 
+<h2 class="font-normal text-lg">
+Filters the array items by the given key is starts with given value.
+</h2>
+
 ```php
 /**
  * Filters the array items by the given key is starts with given value.
