@@ -2,6 +2,9 @@
 title: Registry
 template: component
 description: Registry Component provides a fluent, object-oriented interface for storing data globally in a well managed fashion, helping to prevent global meltdown.
+seo:
+  title: Get Registry Component for storing data globally in a well managed fashion, helping to prevent global meltdown
+  description: Enterprise-ready Registry Component for storing data globally in a well managed fashion, helping to prevent global meltdown
 ---
 
 <h2 class="font-normal text-lg">
