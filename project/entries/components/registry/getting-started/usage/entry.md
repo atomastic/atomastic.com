@@ -1,6 +1,9 @@
 ---
 title: Usage
 template: component
+seo:
+  title: Usage of Registry Component for storing data globally in a well managed fashion, helping to prevent global meltdown
+  description: Usage Enterprise-ready Registry Component for storing data globally in a well managed fashion, helping to prevent global meltdown
 ---
 
 ```php

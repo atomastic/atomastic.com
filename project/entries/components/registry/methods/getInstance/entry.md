@@ -1,12 +1,19 @@
 ---
 title: getInstance
 template: component
-description: Gets the instance via lazy initialization (created on first usage).
+description: Gets the Registry instance via lazy initialization (created on first usage).
+seo:
+  title: Gets the Registry instance via lazy initialization (created on first usage) | getInstance
+  description: You may get the Registry instance via lazy initialization with help of method getInstance
 ---
+
+<h2 class="font-normal text-lg">
+Gets the Registry instance via lazy initialization (created on first usage).
+</h2>
 
 ```php
 /**
- * Gets the instance via lazy initialization (created on first usage)
+ * Gets the Registry instance via lazy initialization (created on first usage)
  */
 public static function getInstance(): Registry
 ```
