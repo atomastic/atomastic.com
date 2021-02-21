@@ -1,8 +1,9 @@
 ---
 title: Usage
-seo:
-  title: Usage of Arrays Component
 template: component
+seo:
+  title: Usage of Arrays Component for Advanced Arrays Manipulations
+  description: Usage Enterprise-ready Arrays Component for working with arrays, allowing you to chain multiple arrays operations together using a more readable syntax compared to traditional PHP arrays functions
 ---
 
 ```php
