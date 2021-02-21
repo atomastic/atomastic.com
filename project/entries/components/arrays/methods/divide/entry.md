@@ -4,6 +4,10 @@ template: component
 description: Divide an array into two arrays.
 ---
 
+<h2 class="font-normal text-lg">
+Divide an array into two arrays.
+</h2>
+
 ```php
 /**
  * Divide an array into two arrays.

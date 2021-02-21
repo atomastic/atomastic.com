@@ -4,6 +4,10 @@ template: component
 description: Apply the given $callback function to the every element of the current array, collecting the results.
 ---
 
+<h2 class="font-normal text-lg">
+Apply the given $callback function to the every element of the current array, collecting the results.
+</h2>
+
 ```php
 /**
  * Apply the given $callback function to the every element of the current array,

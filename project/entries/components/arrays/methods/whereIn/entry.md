@@ -4,6 +4,10 @@ template: component
 description: Filters the array items by the given key value pair.
 ---
 
+<h2 class="font-normal text-lg">
+Filters the array items by the given key value pair.
+</h2>
+
 ```php
 /**
  * Filters the array items by the given key value pair.

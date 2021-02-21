@@ -4,6 +4,10 @@ template: component
 description: Sorts a associative array by a certain key.
 ---
 
+<h2 class="font-normal text-lg">
+Sorts a associative array by a certain key.
+</h2>
+
 ```php
 /**
  * Sorts a associative array by a certain key.

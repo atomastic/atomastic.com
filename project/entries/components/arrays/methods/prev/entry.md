@@ -4,6 +4,10 @@ template: component
 description: Rewind the internal iterator position and returns this element.
 ---
 
+<h2 class="font-normal text-lg">
+Rewind the internal iterator position and returns this element.
+</h2>
+
 ```php
 /**
  * Rewind the internal iterator position and returns this element.

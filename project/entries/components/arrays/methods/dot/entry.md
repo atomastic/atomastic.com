@@ -4,6 +4,10 @@ template: component
 description: Flatten a multi-dimensional associative array with dots.
 ---
 
+<h2 class="font-normal text-lg">
+Flatten a multi-dimensional associative array with dots.
+</h2>
+
 ```php
 /**
  * Flatten a multi-dimensional associative array with dots.

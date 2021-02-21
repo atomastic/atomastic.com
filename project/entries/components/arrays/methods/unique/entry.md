@@ -4,6 +4,10 @@ template: component
 description: Remove duplicate values from the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Remove duplicate values from the current array.
+</h2>
+
 ```php
 /**
  * Remove duplicate values from the current array.

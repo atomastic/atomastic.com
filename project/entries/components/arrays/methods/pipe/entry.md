@@ -4,6 +4,10 @@ template: component
 description: Passes the array to the given callback and return the result.
 ---
 
+<h2 class="font-normal text-lg">
+Passes the array to the given callback and return the result.
+</h2>
+
 ```php
 /**
  * Passes the array to the given callback and return the result.

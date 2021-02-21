@@ -4,6 +4,10 @@ template: component
 description: Skip the first count items.
 ---
 
+<h2 class="font-normal text-lg">
+Skip the first count items.
+</h2>
+
 ```php
 /**
  * Skip the first count items.

@@ -4,6 +4,10 @@ template: component
 description: Extract a slice of the current array with specific offset.
 ---
 
+<h2 class="font-normal text-lg">
+Extract a slice of the current array with specific offset.
+</h2>
+
 ```php
 /**
  * Extract a slice of the current array with specific offset.

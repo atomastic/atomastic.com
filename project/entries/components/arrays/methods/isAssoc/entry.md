@@ -4,6 +4,10 @@ template: component
 description: Determines if an array is associative.
 ---
 
+<h2 class="font-normal text-lg">
+Determines if an array is associative.
+</h2>
+
 ```php
 /**
  * Determines if an array is associative.

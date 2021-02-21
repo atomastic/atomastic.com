@@ -4,6 +4,10 @@ template: component
 description: Merge the current array with the provided one.
 ---
 
+<h2 class="font-normal text-lg">
+Merge the current array with the provided one.
+</h2>
+
 ```php
 /**
  * Merge the current array with the provided one.

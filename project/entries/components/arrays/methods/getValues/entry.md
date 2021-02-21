@@ -4,6 +4,10 @@ template: component
 description: Return an array of all values stored array.
 ---
 
+<h2 class="font-normal text-lg">
+Return an array of all values stored array.
+</h2>
+
 ```php
 /**
  * Return an array of all values stored array.

@@ -4,6 +4,10 @@ template: component
 description: Get the last value from the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Get the last value from the current array.
+</h2>
+
 ```php
 /**
  * Get the last value from the current array.

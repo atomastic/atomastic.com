@@ -4,6 +4,10 @@ template: component
 description: Assign a value to the specified offset.
 ---
 
+<h2 class="font-normal text-lg">
+Assign a value to the specified offset.
+</h2>
+
 ```php
 /**
  * Assign a value to the specified offset.

@@ -4,6 +4,10 @@ template: component
 description: Unset an offset.
 ---
 
+<h2 class="font-normal text-lg">
+Unset an offset.
+</h2>
+
 ```php
 /**
  * Unset an offset.

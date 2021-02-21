@@ -4,6 +4,11 @@ template: component
 description: Get the last key from the current array.
 ---
 
+<h2 class="font-normal text-lg">
+Get the last key from the current array.
+</h2>
+
+
 ```php
 /**
  * Get the last key from the current array.

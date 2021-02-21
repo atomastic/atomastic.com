@@ -4,6 +4,10 @@ template: component
 description: Moves the internal iterator position to the next element and returns this element.
 ---
 
+<h2 class="font-normal text-lg">
+Moves the internal iterator position to the next element and returns this element.
+</h2>
+
 ```php
 /**
  * Moves the internal iterator position to the next element and returns this element.

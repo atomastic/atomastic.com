@@ -4,6 +4,10 @@ template: component
 description: Compute the current array values with additional index check.
 ---
 
+<h2 class="font-normal text-lg">
+Compute the current array values with additional index check.
+</h2>
+
 ```php
 /**
  * Compute the current array values with additional index check.

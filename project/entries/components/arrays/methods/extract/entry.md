@@ -4,6 +4,10 @@ template: component
 description: Extract the items from the current array using "dot" notation for further manipulations.
 ---
 
+<h2 class="font-normal text-lg">
+Extract the items from the current array using "dot" notation for further manipulations.
+</h2>
+
 ```php
 /**
  * Extract the items from the current array using "dot" notation for further manipulations.

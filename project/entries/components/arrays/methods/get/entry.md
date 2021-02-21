@@ -4,6 +4,10 @@ template: component
 description: Get an item from an array using "dot" notation.
 ---
 
+<h2 class="font-normal text-lg">
+Get an item from an array using "dot" notation.
+</h2>
+
 ```php
 /**
  * Get an item from an array using "dot" notation.

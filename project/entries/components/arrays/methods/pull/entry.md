@@ -4,6 +4,10 @@ template: component
 description: Get a value from the array, and remove it.
 ---
 
+<h2 class="font-normal text-lg">
+Get a value from the array, and remove it.
+</h2>
+
 ```php
 /**
  * Get a value from the array, and remove it.

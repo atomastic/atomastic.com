@@ -4,6 +4,10 @@ template: component
 description: Alias of search() method. Search for a given item and return the index of its first occurrence.
 ---
 
+<h2 class="font-normal text-lg">
+Alias of search() method. Search for a given item and return the index of its first occurrence.
+</h2>
+
 ```php
 /**
  * Alias of search() method. Search for a given item and return

@@ -4,6 +4,10 @@ template: component
 description: Pad the current array to the specified size with a given value.
 ---
 
+<h2 class="font-normal text-lg">
+Pad the current array to the specified size with a given value.
+</h2>
+
 ```php
 /**
  * Pad the current array to the specified size with a given value.
