@@ -4,6 +4,9 @@ template: component
 description: Gets the element of the array at the current internal iterator position.
 ---
 
+<h2 class="font-normal text-lg">
+Gets the element of the array at the current internal iterator position.
+</h2>
 
 ```php
 /**

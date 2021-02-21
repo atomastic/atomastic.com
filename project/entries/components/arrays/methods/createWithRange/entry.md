@@ -4,6 +4,11 @@ template: component
 description: Create a new arrayable object from the given string.
 ---
 
+<h2 class="font-normal text-lg">
+Create a new arrayable object from the given string.
+</h2>
+
+
 ```php
 /**
  * Create a new arrayable object with a range of elements.

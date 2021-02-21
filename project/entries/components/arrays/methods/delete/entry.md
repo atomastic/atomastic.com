@@ -4,6 +4,10 @@ template: component
 description: Deletes an array value using "dot notation".
 ---
 
+<h2 class="font-normal text-lg">
+Deletes an array value using "dot notation".
+</h2>
+
 ```php
 /**
  * Deletes an array value using "dot notation".
