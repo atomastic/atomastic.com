@@ -1,5 +1,6 @@
 ---
 title: Atomastic
 template: home
-description: A set of decoupled and reusable PHP building blocks for kickass Web Applications.
+description: Get Enterprise-ready PHP building blocks for kickass Web Applications.
+keywords: "PHP Framework, Enterprise-ready Framework, PHP Components, Framework, PHP"
 ---

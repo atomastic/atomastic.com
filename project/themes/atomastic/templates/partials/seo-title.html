@@ -1,5 +1,3 @@
-{% if (strings(entry.id == 'home')) %}
-    Enterprise-ready PHP building blocks | Atomastic
-{% else %}
-    {% if entry.title %}{{ entry.title|e('html') }} | {% endif %}{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}
+{% if (strings(entry.id == 'home')) %}Enterprise-ready PHP building blocks | Atomastic{% else %}
+{% if entry.title %}{{ entry.title|e('html') }} | {% endif %}{{ flextype.registry.get('plugins.site.settings.title')|e('html') }}
 {% endif %}
