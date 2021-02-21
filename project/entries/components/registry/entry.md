@@ -4,6 +4,10 @@ template: component
 description: Registry Component provides a fluent, object-oriented interface for storing data globally in a well managed fashion, helping to prevent global meltdown.
 ---
 
+<h2 class="font-normal text-lg">
+Registry Component provides a fluent, object-oriented interface for storing data globally in a well managed fashion, helping to prevent global meltdown.
+</h2>
+
 ### Installation
 
 [entries_fetch id="components/registry/getting-started/installation" field="content"]
