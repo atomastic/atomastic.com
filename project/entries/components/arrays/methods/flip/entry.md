@@ -4,6 +4,10 @@ template: component
 description: Exchanges all keys of current array with their associated values.
 ---
 
+<h2 class="font-normal text-lg">
+Exchanges all keys of current array with their associated values.
+</h2>
+
 ```php
 /**
  * Exchanges all keys of current array with their associated values.

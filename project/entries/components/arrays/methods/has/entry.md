@@ -4,6 +4,10 @@ template: component
 description: Checks if the given dot-notated key exists in the array.
 ---
 
+<h2 class="font-normal text-lg">
+Checks if the given dot-notated key exists in the array.
+</h2>
+
 ```php
 /**
  * Checks if the given dot-notated key exists in the array.

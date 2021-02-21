@@ -4,6 +4,10 @@ template: component
 description: Create a new iterator from an ArrayObject instance.
 ---
 
+<h2 class="font-normal text-lg">
+Create a new iterator from an ArrayObject instance.
+</h2>
+
 ```php
 /**
  * Create a new iterator from an ArrayObject instance

@@ -4,6 +4,10 @@ template: component
 description: Filter the current array for elements satisfying the predicate $callback function.
 ---
 
+<h2 class="font-normal text-lg">
+Filter the current array for elements satisfying the predicate $callback function.
+</h2>
+
 ```php
 /**
  * Filter the current array for elements satisfying the predicate $callback function.

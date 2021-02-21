@@ -4,6 +4,10 @@ template: component
 description: Flush all values from the array.
 ---
 
+<h2 class="font-normal text-lg">
+Flush all values from the array.
+</h2>
+
 ```php
 /**
  * Flush all values from the array.

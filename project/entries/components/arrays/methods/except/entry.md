@@ -4,6 +4,10 @@ template: component
 description: Return slice of an array with just a given keys.
 ---
 
+<h2 class="font-normal text-lg">
+Return slice of an array with just a given keys.
+</h2>
+
 ```php
 /**
  * Return slice of an array with just a given keys.

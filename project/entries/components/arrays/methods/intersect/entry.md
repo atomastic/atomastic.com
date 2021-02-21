@@ -4,6 +4,10 @@ template: component
 description: Compute the current array values which present in the given one.
 ---
 
+<h2 class="font-normal text-lg">
+Compute the current array values which present in the given one.
+</h2>
+
 ```php
 /**
  * Compute the current array values which present in the given one.

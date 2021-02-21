@@ -4,6 +4,10 @@ template: component
 description: Verifies that all elements pass the test of the given callback.
 ---
 
+<h2 class="font-normal text-lg">
+Verifies that all elements pass the test of the given callback.
+</h2>
+
 ```php
 /**
  * Verifies that all elements pass the test of the given callback.

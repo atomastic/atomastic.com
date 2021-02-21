@@ -4,6 +4,10 @@ template: component
 description: Groups the array items by a given key.
 ---
 
+<h2 class="font-normal text-lg">
+Groups the array items by a given key.
+</h2>
+
 ```php
 /**
  * Groups the array items by a given key.

@@ -4,6 +4,10 @@ template: component
 description: Check whether the array is empty or not.
 ---
 
+<h2 class="font-normal text-lg">
+Check whether the array is empty or not.
+</h2>
+
 ```php
 /**
  * Check whether the array is empty or not.
