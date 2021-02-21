@@ -1,5 +1,7 @@
 ---
 title: Installation
+seo:
+  title: Installation of Arrays Component
 template: component
 ---
 
