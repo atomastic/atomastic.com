@@ -2,7 +2,7 @@
 
 {% block content %}
     <!-- introducing section -->
-    <div class="pt-0 lg:flex lg:pt-16">
+    <div class="pt-0 pb-0 lg:flex lg:pt-28 lg:pb-28">
         <div class="w-full lg:w-7/12">
             <h1 class="uppercase mb-10 mt-10 text-2xl lg:text-5xl lg:m-0">A set of decoupled and reusable PHP building blocks for kickass Web Applications</h1>
         </div>
@@ -50,4 +50,27 @@
         </div>
     </div>
     <!-- /introducing section -->
+
+    <div class="text-center pt-4 pb-10 lg:pt-24 lg:pb-24">
+        <h2 class="text-3xl lg:text-5xl mb-0 uppercase"><a class="no-underline" href="{{ url() }}/components">Available Components</a></h2>
+    </div>
+
+    {% set componentsCacheID = strings('componentsCacheID').hash().toString() %}
+    {% if flextype.cache.has(componentsCacheID) %}
+        {% set components = flextype.cache.get(componentsCacheID) %}
+    {% else %}
+        {% set components = flextype.entries.fetch('components', {'collection': true}).exceptFromCollection(['content']).sortByAsc('title') %}
+        {% do flextype.cache.set(componentsCacheID, components) %}
+    {% endif %}
+
+    <div class="lg:flex lg:flex-wrap">
+        {% for component in components %}
+        <a href="{{ url() }}/{{ component.id }}" class="p-4 w-full lg:w-4/12 cursor-pointer no-underline">
+            <h4 class="mb-2">{{ component.title }}</h4>
+            <div>
+                {{ component.description }}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
 {% endblock %}
