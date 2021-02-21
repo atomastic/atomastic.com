@@ -4,6 +4,10 @@ template: component
 description: Sorts the array keys with a user-defined comparison function and maintain index association.
 ---
 
+<h2 class="font-normal text-lg">
+Sorts the array keys with a user-defined comparison function and maintain index association.
+</h2>
+
 ```php
 /**
  * Sorts the array keys with a user-defined comparison function and maintain index association.

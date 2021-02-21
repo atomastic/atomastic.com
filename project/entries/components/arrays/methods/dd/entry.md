@@ -4,6 +4,10 @@ template: component
 description: Dumps the arrays items using the given function (print_r by default) and die.
 ---
 
+<h2 class="font-normal text-lg">
+Dumps the arrays items using the given function (print_r by default) and die.
+</h2>
+
 ```php
 /**
  * Dumps the arrays items using the given function (print_r by default) and die.

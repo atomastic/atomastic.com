@@ -4,6 +4,10 @@ template: component
 description: Return the number of items in a given key.
 ---
 
+<h2 class="font-normal text-lg">
+Return the number of items in a given key.
+</h2>
+
 ```php
 /**
  * Return the number of items in a given key.

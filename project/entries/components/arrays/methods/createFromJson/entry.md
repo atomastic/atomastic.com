@@ -4,6 +4,10 @@ template: component
 description: Create a new arrayable object from the given JSON string.
 ---
 
+<h2 class="font-normal text-lg">
+Create a new arrayable object from the given JSON string.
+</h2>
+
 ```php
 /**
  * Create a new arrayable object from the given JSON string.

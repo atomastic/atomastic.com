@@ -4,6 +4,9 @@ template: component
 description: Creates a new Arrays object with the same items.
 ---
 
+<h2 class="font-normal text-lg">
+Creates a new Arrays object with the same items.
+</h2>
 
 ```php
 /**

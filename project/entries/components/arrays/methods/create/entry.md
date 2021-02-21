@@ -4,6 +4,9 @@ template: component
 description: Create a new arrayable object from the given elements.
 ---
 
+<h2 class="font-normal text-lg">
+Create a new arrayable object from the given elements.
+</h2>
 
 ```php
 /**

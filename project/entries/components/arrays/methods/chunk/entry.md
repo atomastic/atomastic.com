@@ -4,6 +4,10 @@ template: component
 description: Create a chunked version of current array.
 ---
 
+<h2 class="font-normal text-lg">
+Create a chunked version of current array.
+</h2>
+
 
 ```php
 /**
