@@ -2,6 +2,9 @@
 title: getTokenValue
 template: component
 description: Get token value.
+seo:
+  title: Get token value | getTokenValue
+  description: You may get token value with help of method getTokenValue
 ---
 
 <h2 class="font-normal text-lg">

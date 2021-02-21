@@ -2,6 +2,9 @@
 title: isValid
 template: component
 description: Checks whether an incoming CSRF token name and value is valid.
+seo:
+  title: Checks whether an incoming CSRF token name and value is valid | isValid
+  description: You may Checks whether an incoming CSRF token name and value is valid with help of method isValid
 ---
 
 <h2 class="font-normal text-lg">
