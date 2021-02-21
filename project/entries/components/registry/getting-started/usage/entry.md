@@ -36,7 +36,7 @@ echo Registry::getInstance()->customMethod();
 1
 ```
 
-Registry Component is extending [Arrays Component](./arrays). All methods of Arrays Component are available when using Registry Component in your projects for manipulations with Registry.<br><br>
+Registry Component is extending [Arrays Component](https://atomastic.com/components/arrays). All methods of Arrays Component are available when using Registry Component in your projects for manipulations with Registry.<br><br>
 
 #### Examples
 
