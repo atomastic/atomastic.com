@@ -1,6 +1,9 @@
 ---
 title: Usage
 template: component
+seo:
+  title: Usage of Csrf Component for Cross Site Request Forgery protection
+  description: Usage Enterprise-ready Csrf Component for Cross Site Request Forgery protection by comparing provided token with session token to ensure request validity.
 ---
 
 

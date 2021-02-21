@@ -4,6 +4,10 @@ template: component
 description: Get token value.
 ---
 
+<h2 class="font-normal text-lg">
+Get token value.
+</h2>
+
 ```php
 /**
  * Get token value.

@@ -4,6 +4,10 @@ template: component
 description: Get token name.
 ---
 
+<h2 class="font-normal text-lg">
+Get token name.
+</h2>
+
 ```php
 /**
  * Get token name.

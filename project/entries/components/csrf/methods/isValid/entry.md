@@ -4,6 +4,10 @@ template: component
 description: Checks whether an incoming CSRF token name and value is valid.
 ---
 
+<h2 class="font-normal text-lg">
+Checks whether an incoming CSRF token name and value is valid.
+</h2>
+
 ```php
 /**
  * Checks whether an incoming CSRF token name and value is valid.
