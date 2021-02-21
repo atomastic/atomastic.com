@@ -22,7 +22,7 @@
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="theme-color" content="#ffffff">
 
-            <title>{% include "themes/atomastic/templates/partials/seo-title.html" %}</title>
+            <title>{% apply spaceless %}{% include "themes/atomastic/templates/partials/seo-title.html" %}{% endapply %}</title>
 
             {% set theme = flextype.registry.get('plugins.site.settings.theme') %}
 
@@ -55,7 +55,7 @@
                 g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
               })();
             </script>
-            <noscript><p><img src="https://digital.flextype.org/matomo/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+            <noscript><p><img src="https://digital.flextype.org/matomo/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="Matomo for atomastic.com" /></p></noscript>
             <!-- End Matomo Code -->
         {% endblock %}
     </head>
